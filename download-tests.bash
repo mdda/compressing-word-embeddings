@@ -14,3 +14,8 @@ if [ ! -e "omerlevy/example_test.sh" ]; then
   
   #rm 688addd64ca2.zip
 fi
+
+
+# cd data/
+# ln -s ~/sketchpad/redcatlabs/embeddings/data/1-glove-1-billion-and-wiki/window11-lc-36/vectors.2-17.hkl 1-glove-1-billion-and-wiki_window11-lc-36_vectors.2-17.hkl
+# ln -s ~/sketchpad/redcatlabs/embeddings/data/2-pretrained-vectors/glove.6B.300d.hkl 2-pretrained-vectors_glove.6B.300d.hkl
