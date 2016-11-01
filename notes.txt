@@ -1,0 +1,28 @@
+
+GloVe
+  test_embedding_file('../data/tmp.embedding.txt', vocab_max=131072)
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.664
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.573
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.749
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.632
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.268
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.713 	0.724
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.554 	0.571
+
+LLoyds  
+  test_embedding_file('../data/tmp.embedding.txt', vocab_max=131072)
+  Reading ../data/lloyds_normed_8.txt
+  Building ../data/lloyds_normed_8.txt.words
+  Built ../data/lloyds_normed_8.txt.words as 131072 300-d vectors
+  Built ../data/lloyds_normed_8.txt.words.npy and ../data/lloyds_normed_8.txt.words.vocab
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/lloyds_normed_8.txt 	0.669
+    WS353 Relatedness              : VECTORS ../data/lloyds_normed_8.txt 	0.584
+    Bruni MEN                      : VECTORS ../data/lloyds_normed_8.txt 	0.752
+    Radinsky M.Turk                : VECTORS ../data/lloyds_normed_8.txt 	0.646
+    Luoung Rare Words              : VECTORS ../data/lloyds_normed_8.txt 	0.271
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/lloyds_normed_8.txt 	0.706 	0.710
+    MSR Analogy                    : VECTORS ../data/lloyds_normed_8.txt 	0.539 	0.555
