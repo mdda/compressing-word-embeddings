@@ -39,8 +39,13 @@ These are the ICONIP-2016 'paper results'
  rsync -avz --progress andrewsm@anson:/mnt/data/home/andrewsm/sketchpad/redcatlabs/embeddings/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-spars* .
  rsync -avz --progress andrewsm@anson:/mnt/data/home/andrewsm/sketchpad/redcatlabs/embeddings/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-spars* .
 
+
 cd ./data
-  ln -s /home/andrewsm/sketchpad/redcatlabs/embeddings/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.hkl .
-  ln -s /home/andrewsm/sketchpad/redcatlabs/embeddings/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recreate.hkl .
-  ln -s /home/andrewsm/sketchpad/redcatlabs/embeddings/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparse_matrix.hkl .
-  ln -s /home/andrewsm/sketchpad/redcatlabs/embeddings/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparsity_recreate.hkl .
+  EMBEDDINGS=/home/andrewsm/sketchpad/redcatlabs/embeddings
+  ln -s ${EMBEDDINGS}/data/1-glove-1-billion-and-wiki/window11-lc-36/vectors.2-17.hkl 1-glove-1-billion-and-wiki_window11-lc-36_vectors.2-17.hkl
+  ln -s ${EMBEDDINGS}/data/2-pretrained-vectors/glove.6B.300d.hkl 2-pretrained-vectors_glove.6B.300d.hkl
+
+  ln -s ${EMBEDDINGS}/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.hkl .
+  ln -s ${EMBEDDINGS}/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recreate.hkl .
+  ln -s ${EMBEDDINGS}/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparse_matrix.hkl .
+  ln -s ${EMBEDDINGS}/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparsity_recreate.hkl .
