@@ -15,3 +15,8 @@ if [ ! -e "omerlevy/example_test.sh" ]; then
   #rm 688addd64ca2.zip
 fi
 
+# Check for availability of docopt :
+python -m docopt
+
+# Fedora fix : 
+# sudo dnf install python2-docopt

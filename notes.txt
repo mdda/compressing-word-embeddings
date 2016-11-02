@@ -59,11 +59,34 @@ sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recrea
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.490 	0.501
 
 
+
 sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparse_matrix.hkl  (MEMORY HEAVY : Needs>8Gb RAM)
+  Built ../data/tmp.embedding.txt.words.npy and ../data/tmp.embedding.txt.words.vocab
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.637
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.452
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.624
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.495
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.180
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.376 	0.408
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.273 	0.299
 
 
-
-
+sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparsity_recreate.hkl
+  Reading ../data/tmp.embedding.txt
+  Building ../data/tmp.embedding.txt.words
+  Built ../data/tmp.embedding.txt.words as 131072 300-d vectors
+  Built ../data/tmp.embedding.txt.words.npy and ../data/tmp.embedding.txt.words.vocab
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.650
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.502
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.685
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.627
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.222
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.652 	0.664
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.518 	0.541
 
 
 
