@@ -28,6 +28,49 @@ LLoyds
     MSR Analogy                    : VECTORS ../data/lloyds_normed_8.txt 	0.539 	0.555
 
 
+sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.hkl
+  Reading ../data/tmp.embedding.txt
+  Building ../data/tmp.embedding.txt.words
+  Built ../data/tmp.embedding.txt.words as 131072 1024-d vectors
+  Built ../data/tmp.embedding.txt.words.npy and ../data/tmp.embedding.txt.words.vocab
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.692
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.513
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.695
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.621
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.174
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.525 	0.551
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.405 	0.438  
+  
+
+sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recreate.hklReading ../data/tmp.embedding.txt
+  Building ../data/tmp.embedding.txt.words
+  Built ../data/tmp.embedding.txt.words as 131072 300-d vectors
+  Built ../data/tmp.embedding.txt.words.npy and ../data/tmp.embedding.txt.words.vocab
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.647
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.510
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.677
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.627
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.219
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.624 	0.629
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.490 	0.501
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 andrewsm@anson:/mnt/data/home/andrewsm/sketchpad/redcatlabs/embeddings/src/4-sparse/*.hkl ...
 
 
