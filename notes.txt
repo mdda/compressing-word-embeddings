@@ -28,6 +28,7 @@ LLoyds
     MSR Analogy                    : VECTORS ../data/lloyds_normed_8.txt 	0.539 	0.555
 
 
+**** MOST INTERESTING ****
 sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.hkl
   Reading ../data/tmp.embedding.txt
   Building ../data/tmp.embedding.txt.words
@@ -44,7 +45,11 @@ sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.h
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.405 	0.438  
   
 
-sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recreate.hklReading ../data/tmp.embedding.txt
+
+
+
+sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recreate.hkl
+  Reading ../data/tmp.embedding.txt
   Building ../data/tmp.embedding.txt.words
   Built ../data/tmp.embedding.txt.words as 131072 300-d vectors
   Built ../data/tmp.embedding.txt.words.npy and ../data/tmp.embedding.txt.words.vocab
