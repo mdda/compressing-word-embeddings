@@ -28,7 +28,7 @@ LLoyds
     MSR Analogy                    : VECTORS ../data/lloyds_normed_8.txt 	0.539 	0.555
 
 
-**** MOST INTERESTING ****
+**** MOST INTERESTING **** (See below)
 sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.hkl
   Reading ../data/tmp.embedding.txt
   Building ../data/tmp.embedding.txt.words
@@ -43,10 +43,6 @@ sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.h
   Word Analogy Tests (~60 seconds each)
     Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.525 	0.551
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.405 	0.438  
-  
-
-
-
 
 sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recreate.hkl
   Reading ../data/tmp.embedding.txt
@@ -131,3 +127,68 @@ cd ./data
   ln -s ${EMBEDDINGS}/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparse_matrix.hkl .
   ln -s ${EMBEDDINGS}/src/4-sparse/sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparsity_recreate.hkl .
 
+
+
+
+GloVe
+  test_embedding_file('../data/tmp.embedding.txt', vocab_max=131072)
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.664
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.573
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.749
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.632
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.268
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.713 	0.724
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.554 	0.571
+
+
+
+
+**** MOST INTERESTING ****
+sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.hkl
+  Reading ../data/tmp.embedding.txt
+  Building ../data/tmp.embedding.txt.words
+  Built ../data/tmp.embedding.txt.words as 131072 1024-d vectors
+  Built ../data/tmp.embedding.txt.words.npy and ../data/tmp.embedding.txt.words.vocab
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.692
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.513
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.695
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.621
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.174
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.525 	0.551
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.405 	0.438  
+  
+embedding and embedding_normed are identical : So the tests implicitly norm...
+
+sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recreate.hkl
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.647
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.510
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.677
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.627
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.219
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.624 	0.629
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.490 	0.501
+
+
+sparse_embedding * random(1024, 300) -> embedding_reconstructed_randomly
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.597
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.422
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.607
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.546
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.182
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.366 	0.348
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.294 	0.283
+    
+    
+GloVe * random(300, 300) -> embedding_reconstructed_randomly :: is actually slightly better that the original!
+
+
+
+    
