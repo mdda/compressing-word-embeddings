@@ -59,6 +59,9 @@ sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparsity_recrea
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.490 	0.501
 
 
+sparse.6B.300d_S-21_2n-shuf-noise-after-norm_4k_.2.01_1-50_5000_GPU-sparse_matrix.hkl  (MEMORY HEAVY : Needs>8Gb RAM)
+
+
 
 
 
