@@ -186,6 +186,16 @@ sparse_embedding * random(1024, 300) -> embedding_reconstructed_randomly
     Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.366 	0.348
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.294 	0.283
     
+sparse_embedding -> binarized if np.where(embedding>0, 1, 0)
+  Word Similarity Tests (~5 seconds each)
+    WS353 Similarity               : VECTORS ../data/tmp.embedding.txt 	0.620
+    WS353 Relatedness              : VECTORS ../data/tmp.embedding.txt 	0.438
+    Bruni MEN                      : VECTORS ../data/tmp.embedding.txt 	0.564
+    Radinsky M.Turk                : VECTORS ../data/tmp.embedding.txt 	0.559
+    Luoung Rare Words              : VECTORS ../data/tmp.embedding.txt 	0.146
+  Word Analogy Tests (~60 seconds each)
+    Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.344 	0.347
+    MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.265 	0.273
     
 GloVe * random(300, 300) -> embedding_reconstructed_randomly :: is actually slightly better that the original!
 
