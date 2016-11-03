@@ -171,11 +171,15 @@ sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.h
   Word Analogy Tests (~60 seconds each)
     Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.525 	0.551
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.405 	0.438  
-  Local(google) final : 51.30% using 1930, which is 50.64% of total (approx 0.525?)
-  Local(msr) final    : 48.58% using 669, which is 40.59% of total     (approx 0.405)
+  Local(google) final : 51.30% using 1930, which is 50.64% of total     (approx 0.525?)
+  Local(msr) final    : 48.58% using 669, which is 40.59% of total      (approx 0.405)
   Incorrectly using non-normed embedding : 
     Local(msr) final  : 38.57% using 669, which is 32.22% of total
 
+  settish1 
+    Local(msr) final : 45.89% using 669, which is 38.34% of total       (not better, not much worse)
+  settish2
+    Local(msr) final : 47.53% using 669, which is 39.71% of total       (not better, not much worse)
   
 embedding and embedding_normed are identical : So the tests implicitly norm...
 
@@ -206,4 +210,51 @@ sparse_embedding -> binarized if np.where(embedding>0, 1, 0)
 
 
 
+highest : higher == saddest : ?'strangest'  :: FAIL
+high : highest == strict : ?'stricter'  :: FAIL
+great : greater == classy : ?'grungy'  :: FAIL
+great : greatest == fat : ?'fats'  :: FAIL
+great : greater == costly : ?'expensive'  :: FAIL
+lowest : lower == toughest : ?'tougher'  :: WIN
+low : lowest == short : ?'longest'  :: FAIL
+low : lower == old : ?'older'  :: WIN
+largest : larger == richest : ?'wealthiest'  :: FAIL
+large : largest == pretty : ?'thing'  :: FAIL
+large : larger == lucky : ?'fortunate'  :: FAIL
+oldest : older == lightest : ?'lighter'  :: WIN
+old : oldest == few : ?'several'  :: FAIL
+old : older == tall : ?'taller'  :: WIN
+smallest : smaller == smoothest : ?'larger'  :: FAIL
+small : smallest == broad : ?'broadest'  :: WIN
+smallest : smaller == greatest : ?'larger'  :: FAIL
+easy : easiest == smooth : ?'smoothest'  :: WIN
+easy : easier == lean : ?'faster'  :: FAIL
+early : earliest == narrow : ?'widest'  :: FAIL
+early : earlier == noisy : ?'boisterous'  :: FAIL
+earliest : earlier == deepest : ?'last'  :: FAIL
+At 26 : 30.77%
+young : youngest == quick : ?'boldest'  :: FAIL
+young : younger == deep : ?'deeper'  :: WIN
+youngest : younger == closest : ?'older'  :: FAIL
+long : longest == kind : ?'sort'  :: FAIL
+long : longer == mighty : ?'hardly'  :: FAIL
+long : longest == smart : ?'nicest'  :: FAIL
+bad : worse == weak : ?'weaker'  :: WIN
+worst : worse == friendliest : ?'luckier'  :: FAIL
+bad : worst == young : ?'youngest'  :: WIN
+few : fewer == friendly : ?'decorous'  :: FAIL
+fewest : fewer == cleanest : ?'than'  :: FAIL
+few : fewest == free : ?'unrestricted'  :: FAIL
+big : bigger == funny : ?'funnier'  :: WIN
+biggest : bigger == nicest : ?'nicer'  :: WIN
+big : biggest == bold : ?'largest'  :: FAIL
+strong : stronger == messy : ?'livelier'  :: FAIL
+strong : strongest == hard : ?'easiest'  :: FAIL
+close : closer == early : ?'late'  :: FAIL
+closest : closer == saddest : ?'strangest'  :: FAIL
+close : closest == quick : ?'swift'  :: FAIL
+broad : broader == cheap : ?'cheaper'  :: WIN
+broadest : broader == highest : ?'increasing'  :: FAIL
+broad : broadest == wise : ?'wisest'  :: WIN
+hard : harder == poor : ?'poorer'  :: WIN
     
