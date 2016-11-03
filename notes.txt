@@ -171,6 +171,11 @@ sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.h
   Word Analogy Tests (~60 seconds each)
     Google Analogy                 : VECTORS ../data/tmp.embedding.txt 	0.525 	0.551
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.405 	0.438  
+  Local(google) final : 51.30% using 1930, which is 50.64% of total (approx 0.525?)
+  Local(msr) final    : 48.58% using 669, which is 40.59% of total     (approx 0.405)
+  Incorrectly using non-normed embedding : 
+    Local(msr) final  : 38.57% using 669, which is 32.22% of total
+
   
 embedding and embedding_normed are identical : So the tests implicitly norm...
 
