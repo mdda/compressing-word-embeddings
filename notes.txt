@@ -182,6 +182,11 @@ sparse.6B.300d_S-21_2n-shuf-noise-after-norm_.2.01_6-75_4000_GPU-sparse_matrix.h
     Local(msr) final : 47.53% using 669, which is 39.71% of total       (not better, not much worse)
   settish3
     Local(msr) final : 49.18% using 669, which is 41.09% of total       (a tiny bit better)
+
+  settish3+orig
+    Local(google) final : 53.01% using 1930, which is 52.33% of total   (a bit better)
+    Local(msr) final : 50.82% using 669, which is 42.46% of total       (a bit better)
+
   
 embedding and embedding_normed are identical : So the tests implicitly norm...
 
