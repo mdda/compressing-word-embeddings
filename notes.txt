@@ -215,6 +215,9 @@ sparse_embedding -> binarized if np.where(embedding>0, 1, 0)                (emb
     MSR Analogy                    : VECTORS ../data/tmp.embedding.txt 	0.265 	0.273
 
 
+But the ICLR deadline has passed now : So back to ironing out the sparsification code (per the ICONIP paper submission)...
+
+
 
 highest : higher == saddest : ?'strangest'  :: FAIL
 high : highest == strict : ?'stricter'  :: FAIL
@@ -238,29 +241,3 @@ easy : easier == lean : ?'faster'  :: FAIL
 early : earliest == narrow : ?'widest'  :: FAIL
 early : earlier == noisy : ?'boisterous'  :: FAIL
 earliest : earlier == deepest : ?'last'  :: FAIL
-At 26 : 30.77%
-young : youngest == quick : ?'boldest'  :: FAIL
-young : younger == deep : ?'deeper'  :: WIN
-youngest : younger == closest : ?'older'  :: FAIL
-long : longest == kind : ?'sort'  :: FAIL
-long : longer == mighty : ?'hardly'  :: FAIL
-long : longest == smart : ?'nicest'  :: FAIL
-bad : worse == weak : ?'weaker'  :: WIN
-worst : worse == friendliest : ?'luckier'  :: FAIL
-bad : worst == young : ?'youngest'  :: WIN
-few : fewer == friendly : ?'decorous'  :: FAIL
-fewest : fewer == cleanest : ?'than'  :: FAIL
-few : fewest == free : ?'unrestricted'  :: FAIL
-big : bigger == funny : ?'funnier'  :: WIN
-biggest : bigger == nicest : ?'nicer'  :: WIN
-big : biggest == bold : ?'largest'  :: FAIL
-strong : stronger == messy : ?'livelier'  :: FAIL
-strong : strongest == hard : ?'easiest'  :: FAIL
-close : closer == early : ?'late'  :: FAIL
-closest : closer == saddest : ?'strangest'  :: FAIL
-close : closest == quick : ?'swift'  :: FAIL
-broad : broader == cheap : ?'cheaper'  :: WIN
-broadest : broader == highest : ?'increasing'  :: FAIL
-broad : broadest == wise : ?'wisest'  :: WIN
-hard : harder == poor : ?'poorer'  :: WIN
-    
